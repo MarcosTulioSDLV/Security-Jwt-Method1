@@ -1,8 +1,6 @@
 # Security JWT Rest API
 
-![Spring_Img](https://github.com/MarcosTulioSDLV/Library-System/assets/41268178/278e8b15-1ccd-4a57-93e9-496c401cef0b)
-
-![Java_Img](https://github.com/MarcosTulioSDLV/Library-System/assets/41268178/0d474a67-554b-4f5e-b0a9-a58a659d65db)
+![Spring_Img](https://github.com/MarcosTulioSDLV/Library-System/assets/41268178/278e8b15-1ccd-4a57-93e9-496c401cef0b) ![Java_Img](https://github.com/MarcosTulioSDLV/Library-System/assets/41268178/0d474a67-554b-4f5e-b0a9-a58a659d65db) ![SpringSecurity](https://github.com/MarcosTulioSDLV/Library-System/assets/41268178/3e8b7bce-9d34-4bca-8a86-4a07c7105273) ![JWT](https://github.com/MarcosTulioSDLV/Library-System/assets/41268178/42cf1911-9a0a-4262-b3f6-9b77e84bb5bc)
 
 
 I developed a Rest API to manage products, providing CRUD (Create, Read, Update and Delete) operations. The API was built using Spring Boot and Java, Mysql as the Database, Spring Security and JWT tokens for authentication control.
