@@ -1,6 +1,7 @@
 # Security JWT Rest API
 
 ![Spring_Img](https://github.com/MarcosTulioSDLV/Library-System/assets/41268178/b754d37e-7d9b-4623-ba66-4f62614bbc07)
+![Java_Img](https://github.com/MarcosTulioSDLV/Library-System/assets/41268178/8b8a7840-e772-4b7e-9f3e-2387ad066417)
 
 
 I developed a Rest API to manage products, providing CRUD (Create, Read, Update and Delete) operations. The API was built using Spring Boot and Java, Mysql as the Database, Spring Security and JWT tokens for authentication control.
