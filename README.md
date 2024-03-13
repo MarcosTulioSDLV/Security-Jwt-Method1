@@ -7,10 +7,10 @@ I developed a Rest API to manage products, providing CRUD (Create, Read, Update 
 This API enables the storage of product information, including product code, name, section, price, etc. On the user side, it allows the storage of usernames and passwords. Lastly, for roles, it only stores the name.
 
 ## Authentication
-The API uses Spring Security for authentication control. The following roles are available:
+The API uses Spring Security for authentication control. The following roles are available be default:
 
 ```
-USER  -> Standard user role only for find avaliable products.
+USER  -> Standard user role only for basic product operations (get available products).
 ADMIN -> Admin role for advanced product operations (registration, updates, or deletions).
 ```
 
@@ -22,9 +22,9 @@ To access protected endpoints, provide the appropriate authentication credential
 For this project, default roles, users, and products have been created for quick testing by using the scheme.sql and data.sql files. However, you are also provided with endpoints to register your new roles, users, and products.
 The default users were created with the following credentials:
 
-Username: user,  Password: 123 (USER role only)
-Username: admin, Password: 123 (ADMIN role only)
-Username: super, Password: 123 (both USER and ADMIN roles)
+- Username: user,  Password: 123 (USER role only).
+- Username: admin, Password: 123 (ADMIN role only).
+- Username: super, Password: 123 (both USER and ADMIN roles).
 
 ## API Endpoints
 The API provides the following endpoints:
