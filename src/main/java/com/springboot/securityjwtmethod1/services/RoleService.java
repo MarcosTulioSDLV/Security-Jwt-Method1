@@ -32,13 +32,7 @@ public class RoleService {
         return roleRepository.findById(id).orElseThrow(()-> new RoleNotFoundException("Role with id: "+id+" not found!"));
     }
 
-    @Transactional
-    public Role addRole(Role role) throws RoleNameExistsException {
-        if(roleRepository.existsByRoleName(role.getRoleName())){
-            throw new RoleNameExistsException("Role name: "+role.getRoleName()+" already exists!");
-        }
-        return roleRepository.save(role);
-    }
+
 
 
 

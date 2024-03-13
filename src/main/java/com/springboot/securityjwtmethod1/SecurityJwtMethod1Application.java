@@ -21,9 +21,9 @@ public class SecurityJwtMethod1Application implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		String password="123";
-		LOG.info("Username: user, Password: "+password);
-		LOG.info("Username: admin, Password: "+password);
-		LOG.info("Username: super, Password: "+password);
+		LOG.info("Username: user1, Password: "+password);
+		LOG.info("Username: user2, Password: "+password);
+		LOG.info("Username: user3, Password: "+password);
 	}
 
 }

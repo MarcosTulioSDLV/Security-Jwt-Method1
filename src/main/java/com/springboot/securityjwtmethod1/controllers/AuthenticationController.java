@@ -43,7 +43,7 @@ public class AuthenticationController {
         User user= new User();
         BeanUtils.copyProperties(requestRegisterDto,user);
         user.setPassword(passwordEncoder.encode(user.getPassword()));
-        List<Long> roleIds= requestRegisterDto.getRoleIds();
+        List<Long> roleIds= requestRegisterDto.roleIds();
         try {
             User addedUser= authenticationService.register(user,roleIds);
             return new ResponseEntity<>(addedUser, HttpStatus.CREATED);

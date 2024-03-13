@@ -1,10 +1,10 @@
 package com.springboot.securityjwtmethod1.controllers;
 
-import com.springboot.securityjwtmethod1.dtos.RequestRoleDto;
-import com.springboot.securityjwtmethod1.exceptions.RoleNameExistsException;
+
 import com.springboot.securityjwtmethod1.exceptions.RoleNotFoundException;
 import com.springboot.securityjwtmethod1.models.Role;
 import com.springboot.securityjwtmethod1.services.RoleService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -40,17 +40,6 @@ public class RoleController {
         }
     }
 
-    @PostMapping(value = "/roles")
-    public ResponseEntity<Object> addRole(@RequestBody RequestRoleDto requestRoleDto){
-        Role role= new Role();
-        role.setRoleName(requestRoleDto.getRoleName());
-        try {
-            Role addedRole= roleService.addRole(role);
-            return new ResponseEntity<>(addedRole,HttpStatus.CREATED);
-        } catch (RoleNameExistsException e) {
-            return new ResponseEntity<>(e.getMessage(),HttpStatus.CONFLICT);
-        }
-    }
 
 
 

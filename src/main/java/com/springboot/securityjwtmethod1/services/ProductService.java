@@ -54,7 +54,7 @@ public class ProductService {
             throw new ProductNameExistsException("Product with name: "+product.getName()+" already exists!");
         }
 
-        BeanUtils.copyProperties(product,recoveredProduct,"date");
+        BeanUtils.copyProperties(product,recoveredProduct,"creationDate");
         return recoveredProduct;
     }
 
