@@ -4,10 +4,10 @@
 
 
 I developed a Rest API to manage products, providing CRUD (Create, Read, Update and Delete) operations. The API was built using **Spring Boot and Java, Mysql as the Database, Spring Security and JWT tokens for authentication control**.
-This API enables the storage of product information, including product code, name, section, price, etc. On the user side, it allows the storage of usernames and passwords. Lastly, for roles, it only stores the name.
+This API enables the storage of product information, including product code, name, section, price, etc. Additionally, it supports the storage of user information, including usernames and passwords.
 
 ## Authentication
-The API uses Spring Security for authentication control. The following roles are available be default:
+The API uses Spring Security for authentication control. The following roles are available:
 
 ```
 USER  -> Standard user role only for basic product operations (get available products).
