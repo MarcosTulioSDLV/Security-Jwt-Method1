@@ -19,12 +19,12 @@ To access protected endpoints, provide the appropriate authentication credential
 
 ## Database Initialization with Default Data
 
-For this project, default roles, users, and products have been created for quick testing by using the scheme.sql and data.sql files. However, you are also provided with endpoints to register your new roles, users, and products.
+For this project, default users and products have been created for quick testing by using the scheme.sql and data.sql files. However, you are also provided with endpoints to register new users, logging in, and subsequently storing new products.
 The default users were created with the following credentials:
 
-- Username: user,  Password: 123 (USER role only).
-- Username: admin, Password: 123 (ADMIN role only).
-- Username: super, Password: 123 (both USER and ADMIN roles).
+- Username: user1, Password: 123 (USER role only).
+- Username: user2, Password: 123 (ADMIN role only).
+- Username: user3, Password: 123 (both USER and ADMIN roles).
 
 ## API Endpoints
 The API provides the following endpoints:
@@ -36,7 +36,6 @@ DELETE /auth/delete/{id}
 
 GET    /api/roles
 GET    /api/roles/{id}
-POST   /api/roles
 
 GET    /api/products
 GET    /api/products/{id}

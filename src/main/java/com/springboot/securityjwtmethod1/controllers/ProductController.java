@@ -60,7 +60,6 @@ public class ProductController {
         }
     }
 
-
     @PutMapping(value = "/products/{id}")
     public ResponseEntity<Object> updateProduct(@RequestBody @Valid RequestProductDto requestProductDto,
                                                 @PathVariable Long id){
